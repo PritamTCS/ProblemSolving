@@ -11,3 +11,11 @@ for s in string:
 print(my_dict)
 
 
+from collections import OrderedDict
+
+my_dict1 = OrderedDict()
+
+my_dict1['a1'] = "Test1"
+my_dict1['a2'] = "Test2"
+
+print(my_dict1)

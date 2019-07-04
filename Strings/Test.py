@@ -33,7 +33,7 @@ for i in arr:
 # print(mp)
 # print(mp.keys())
 
-lst = [2, 5, 2, 8, 5, 6, 8, 8]
+lst = [2, 5, 2, 8, 2, 6, 8, 8, 5, 8]
 dict1 = {}
 
 for k in lst:
@@ -42,7 +42,7 @@ for k in lst:
     else:
         dict1[k] = 1
 print(dict1)
-lst_sort = sorted(dict1.values())
+lst_sort = sorted(dict1.values(), reverse = True)
 print(lst_sort)
 # for k, v in dict1.items():
 #     for i in lst_sort:

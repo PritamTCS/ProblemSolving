@@ -13,7 +13,7 @@ def sort(arr, temp, low, up):
     sort(arr, temp, mid+1, up)
 
     merge(arr, temp, low, mid, mid+1, up)
-    copy(arr, temp, low, up)
+    copy(temp, arr, low, up)
 
 
 def merge(arr, temp, low1, up1, low2, up2):
@@ -43,7 +43,7 @@ def merge(arr, temp, low1, up1, low2, up2):
         j += 1
 
 
-def copy(arr, temp, low, up):
+def copy(temp, arr, low, up):
     for i in range(low, up+1):
         arr[i] = temp[i]
 

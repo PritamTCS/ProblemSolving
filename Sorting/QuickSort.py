@@ -25,6 +25,8 @@ def partition(arr, low, up):
 
         if start < end:
             arr[start], arr[end] = arr[end], arr[start]
+            start += 1
+            end -= 1
 
         else:
             break
